@@ -2,6 +2,7 @@ import numpy
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def get_empiriacal_mean_vector_binomial(N=200000, n=20, p=0.5):
     """
     returns empirical mean vector from Bernulli(0.5)
@@ -28,8 +29,6 @@ def calulate_axises(p=0.5, N=200000, K=50):
         probabilities[i] = count_bigger_than(X, p, epsilons[i]) / N
     return epsilons, probabilities
 
-def get_hoeffding_axis(x):
-    hoff = np.ze
 
 def plot_my_graph():
     x, y = calulate_axises()
@@ -41,6 +40,7 @@ def plot_my_graph():
     plt.plot(x, hoeffding, label='Hoeffding')
     plt.legend()
     plt.show()
+
 
 plot_my_graph()
 
