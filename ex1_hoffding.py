@@ -40,3 +40,5 @@ plt.plot(x ,y, label='Empirical')
 plt.plot(x, hoeffding, label='Hoeffding')
 plt.legend()
 plt.show()
+
+print()
