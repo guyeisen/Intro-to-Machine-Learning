@@ -31,14 +31,17 @@ def calulate_axises(p=0.5, N=200000, K=50):
 def get_hoeffding_axis(x):
     hoff = np.ze
 
-x , y = calulate_axises()
-hoeffding = 2*np.e**(-2*len(x)*x**2)
-plt.title("Empirical probability vs Hoeffding bound")
-plt.ylabel("probablity")
-plt.xlabel("epsilon")
-plt.plot(x ,y, label='Empirical')
-plt.plot(x, hoeffding, label='Hoeffding')
-plt.legend()
-plt.show()
+def plot_my_graph():
+    x, y = calulate_axises()
+    hoeffding = 2 * np.e ** (-2 * len(x) * x ** 2)
+    plt.title("Empirical probability vs Hoeffding bound")
+    plt.ylabel("probablity")
+    plt.xlabel("epsilon")
+    plt.plot(x, y, label='Empirical')
+    plt.plot(x, hoeffding, label='Hoeffding')
+    plt.legend()
+    plt.show()
 
-print()
+plot_my_graph()
+
+
